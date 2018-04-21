@@ -1,7 +1,7 @@
 <?php
 
 /* ****************************************
- * 
+ * IMPORTANT !!!
  * NE PAS MODIFIER CE FICHIER
  * car il peut être modifié  et renvoyé à chaque cours
  * Si vous avez besoin de définir/redéfinir votre propre config utiliser le fichier ma_config.inc
@@ -14,7 +14,7 @@ $navigationSCH  = array();
 $fonctions_utiles = array();
 $questions_cours = array();
 
-$base_url="http://localhost/btssn_02_PHP_TP2_sitecours_v1/";
+$base_url="http://localhost/siteCoursPHP/";
 
 $navigation["syntaxe"]["titre"]="Syntaxe de Base";
 $navigation["syntaxe"]["titre_cours"]="La Syntaxe";
@@ -180,13 +180,127 @@ $fonctions_utiles["string"][21]["url"]="http://fr2.php.net/manual/fr/function.mk
 $fonctions_utiles["string"][22]["nom"]="microtime()";
 $fonctions_utiles["string"][22]["url"]="http://fr2.php.net/manual/fr/function.microtime.php";
 
+//------------------------------------------------------------------------------------------
 
+
+
+
+//config suite
+$navigation["poo"]["titre"]="Structurer son programme";
+$navigation["poo"]["titre_cours"]="La Structure";
+$navigation["poo"]["fichier"]="lessons/ch3c1-poo-1.php";
+$navigation["form"]["titre"]="Les Formulaires";
+$navigation["form"]["titre_cours"]="Les Formulaires";
+$navigation["form"]["fichier"]="lessons/ch3c2-form-1.php";
+$navigation["bdd"]["titre"]="Interagir avec une Base de données";
+$navigation["bdd"]["titre_cours"]="Bases de données";
+$navigation["bdd"]["fichier"]="lessons/ch3c3-bdd-1.php";
+$navigation["exemple"]["titre"]="Exemple complet";
+$navigation["exemple"]["titre_cours"]="Exemple";
+$navigation["exemple"]["fichier"]="lessons/ch3c4-exemple.php";
+
+$navigationSCH["poo"][0]["titre"]="Déclaration";
+$navigationSCH["poo"][0]["fichier"]="lessons/ch3c1-poo-1.php";
+$navigationSCH["poo"][1]["titre"]="TODO-8";
+$navigationSCH["poo"][1]["fichier"]="lessons/ch3c1-poo-2.php";
+$navigationSCH["poo"][2]["titre"]="les portées de variables, constantes et paramètres";
+$navigationSCH["poo"][2]["fichier"]="lessons/ch3c1-poo-3.php";
+$navigationSCH["poo"][3]["titre"]="Récursivité et TODO-9";
+$navigationSCH["poo"][3]["fichier"]="lessons/ch3c1-poo-4.php";
+$navigationSCH["poo"][4]["titre"]="les Objets et TODO-10";
+$navigationSCH["poo"][4]["fichier"]="lessons/ch3c1-poo-5.php";
+
+$navigationSCH["form"][0]["titre"]="Traitement GET";
+$navigationSCH["form"][0]["fichier"]="lessons/ch3c2-form-1.php";
+$navigationSCH["form"][1]["titre"]="Formulaire POST";
+$navigationSCH["form"][1]["fichier"]="lessons/ch3c2-form-2.php";
+
+
+$navigationSCH["bdd"][0]["titre"]="Appel procédural";
+$navigationSCH["bdd"][0]["fichier"]="lessons/ch3c3-bdd-1.php";
+$navigationSCH["bdd"][1]["titre"]="Appel objet";
+$navigationSCH["bdd"][1]["fichier"]="lessons/ch3c3-bdd-2.php";
+$navigationSCH["bdd"][2]["titre"]="TODO-11";
+$navigationSCH["bdd"][2]["fichier"]="lessons/ch3c3-bdd-3.php";
+
+// LES OBJETS
+
+$questions_cours["poo"][]="De quoi est composée la signature d'une fonction ?";
+$questions_cours["poo"][]="Quelle est la différence entre un paramètre et une variable";
+$questions_cours["poo"][]="Quelle est la portée d'un paramètre de fonction ?";
+$questions_cours["poo"][]="Quelle est la portée d'une variable définie dans une fonction ?";
+$questions_cours["poo"][]="Quelle est la différence entre un passage par valeur et un passage par référence ?";
+$questions_cours["poo"][]="Quelle est la différence entre une variable globale et un passage par référence ?";
+$questions_cours["poo"][]="Quelle est la portée d'une variable globale définie dans une fonction ?";
+$questions_cours["poo"][]="Quelle est la portée d'une variable globale définie dans le programme principal ?";
+$questions_cours["poo"][]="A quoi servent les fonctions ?";
+$questions_cours["poo"][]="Combien peut-on passer de paramètres à une fonction ?";
+$questions_cours["poo"][]="Quelle est la différence entre une variable et un attribut ?";
+$questions_cours["poo"][]="Que permet un objet ?";
+$questions_cours["poo"][]="Quelle est la différence entre un paramètre et un attribut ?";
+$questions_cours["poo"][]="Que font les constructeurs ?";
+
+
+$fonctions_utiles["poo"][1]["nom"]="func_num_args()";
+$fonctions_utiles["poo"][1]["url"]="http://fr2.php.net/manual/fr/function.func-num-args.php";
+$fonctions_utiles["poo"][2]["nom"]="func_get_args()";
+$fonctions_utiles["poo"][2]["url"]="http://fr2.php.net/manual/fr/function.func-get-args.php";
+$fonctions_utiles["poo"][3]["nom"]="func_get_arg()";
+$fonctions_utiles["poo"][3]["url"]="http://fr2.php.net/manual/fr/function.func-get-arg.ph";
+$fonctions_utiles["poo"][4]["nom"]="function_exists()";
+$fonctions_utiles["poo"][4]["url"]="http://fr2.php.net/manual/fr/function.function-exists.php";
+
+//Formulaires
+$questions_cours["form"][]="Quelle est la différence entre une action en methode GET et une action en méthode POST ?";
+$questions_cours["form"][]="Quelle est la différence entre l'attribut NAME et ID ?";
+$questions_cours["form"][]="Quelle est la différence entre un champ hidden et un champ password ?";
+$questions_cours["form"][]="Quelle est la différence entre l'attribut SIZE et MAXLENGHT ?";
+$questions_cours["form"][]="A quoi sert l'attribut CHECKED?";
+$questions_cours["form"][]="A quoi sert l'attribut SELECTED?";
+$questions_cours["form"][]="A quoi sert l'attribut READONLY";
+$questions_cours["form"][]="A quoi sert la balise Label?";
+$questions_cours["form"][]="Comment doit-on nommer un champ qui permet de saisir plusieurs valeurs ?";
+
+$fonctions_utiles["form"][1]["nom"]="htmlspecialchars()";
+$fonctions_utiles["form"][1]["url"]="http://fr2.php.net/manual/fr/function.htmlspecialchars.php";
+
+ 
+// BDD
+$questions_cours["bdd"][]="Quelle est la nature du résultat retourné par mysql_query ?";
+$questions_cours["bdd"][]="Quelle est la différence entre les deux types d'appel à MYSQLI ?";
+
+$fonctions_utiles["bdd"][1]["nom"]="mysqli_connect()";
+$fonctions_utiles["bdd"][1]["url"]="http://fr2.php.net/manual/fr/function.mysqli-connect.php";
+$fonctions_utiles["bdd"][2]["nom"]="mysqli_close()";
+$fonctions_utiles["bdd"][2]["url"]="http://fr2.php.net/manual/fr/mysqli.close.php";
+$fonctions_utiles["bdd"][3]["nom"]="mysqli_query()";
+$fonctions_utiles["bdd"][3]["url"]="http://fr2.php.net/manual/fr/mysqli.query.php";
+$fonctions_utiles["bdd"][4]["nom"]="mysqli_fetch_assoc()";
+$fonctions_utiles["bdd"][4]["url"]="http://fr2.php.net/manual/fr/function.mysql-fetch-assoc.php";
+$fonctions_utiles["bdd"][5]["nom"]="mysqli_fetch_array()";
+$fonctions_utiles["bdd"][5]["url"]="http://fr2.php.net/manual/fr/mysqli-result.fetch-array.php";
+$fonctions_utiles["bdd"][6]["nom"]="mysqli_fetch_object()";
+$fonctions_utiles["bdd"][6]["url"]="http://fr2.php.net/manual/fr/mysqli-result.fetch-object.php";
+$fonctions_utiles["bdd"][7]["nom"]="mysqli_fetch_row()";
+$fonctions_utiles["bdd"][7]["url"]="http://fr2.php.net/manual/fr/mysqli-result.fetch-row.php";
+$fonctions_utiles["bdd"][8]["nom"]="mysqli_num_rows()";
+$fonctions_utiles["bdd"][8]["url"]="http://fr2.php.net/manual/fr/mysqli-result.num-rows.php";
+$fonctions_utiles["bdd"][9]["nom"]="mysqli_result()";
+$fonctions_utiles["bdd"][9]["url"]="http://fr2.php.net/manual/fr/class.mysqli-result.php";
+$fonctions_utiles["bdd"][10]["nom"]="mysqli_error()";
+$fonctions_utiles["bdd"][10]["url"]="http://fr2.php.net/manual/fr/mysqli.error.php";
+
+
+
+//-----------------------------------------------------------------------------------------
 
 
 $correctionPath = "corrections";
+
+// IMPORTANT !!!! ---------------------------------------------
 //Fichier à créer et à modifier au besoin pour ECRASER et/ou compléter la config de base
 include 'ma_config.inc';
-
+// IMPORTANT !!!! ---------------------------------------------
 
 
 
