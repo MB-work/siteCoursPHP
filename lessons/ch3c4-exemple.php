@@ -5,7 +5,7 @@ include '../template/header.php';
 ?>
 
 <h3>Formulaire et page de traitement</h3>
-<form name="formu3" method="POST" action="<?=$base_url;?>lessons/exemple_action.php">   
+<form name="formu3" method="POST" action="<?=$base_url;?>lessons/ch3c4-exemple_action.php">   
     <fieldset>
         <LEGEND align=top> Insérer un nouvel Ingrédient </LEGEND> 
         <div>     
