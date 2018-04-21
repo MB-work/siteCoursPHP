@@ -1,0 +1,127 @@
+/* http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF */
+
+
+nav .list-group-item{
+    color:#57C100;
+    background-color: black;
+}
+
+nav .list-group-item a{
+    color:#57C100;
+
+}
+
+header a{
+    color: black;
+}
+
+header a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.jumbotron p{
+    font-size: 14px;
+}
+
+article h2{
+    margin : 0px 0px 10px 0px; 
+    color:#439500;
+}
+
+article h3{
+    margin : 10px 0px 5px 0px; 
+    color:#FF9700;
+}
+
+article h4{
+    margin : 5px 0px 5px 0px; 
+    color:#2C0072;
+}
+
+
+
+/*
+ .fonctions{
+
+    background-color: #ffcc66;
+    border: 2px solid #ff6633;
+}
+
+*/
+
+
+ .fonctions{
+
+    /*background-color: #ffc570;
+    background-color: #ffcc66;
+    border: 2px solid #FF9700;*/
+}
+
+ .fonctions .list-group-item {
+
+background-color: #ffcc66;
+border: 1px solid #FF9700;
+
+}
+/*
+.questions{
+font-size: 10pt;
+    background-color: #ccffcc;
+    border: 2px solid #006633;
+}
+
+.questions{
+font-size: 10pt;
+    background-color: #b1ff70;
+    border: 2px solid #57C100;
+}
+
+*/
+ .questions .list-group-item {
+
+background-color: #b1ff70;
+border: 1px solid #57C100;
+
+}
+
+
+
+.questions h4{
+    color : #57C100;
+    margin-left: 5px;
+}
+
+.fonctions h4{
+    color : #FF9700;
+    margin-left: 5px;
+}
+
+.fonctions a{
+    color : #000000;
+}
+.fonctions a:visited{
+    color : #000000;
+}
+.fonctions a:over{
+    color : #000000;
+}
+
+
+.vrai{
+    color:#009900;
+}
+.faux{
+    color:#ff0033;
+}
+
+.jouer{
+    background-color: #DAD7DE;
+    border: 1px solid #444444;
+    margin-bottom: 10px;
+}
+
+.com {
+    font-size: 10pt;
+    font-style: italic;
+}
